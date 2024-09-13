@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Drive - Google Drive</title>
+    <link rel="icon" href="//ssl.gstatic.com/docs/doclist/images/drive_2022q3_32dp.png" />
+</head>
+<body>
+    <button onclick="opentab();this.remove();">Open</button>
+    <script>
+        function opentab() {
+            const wind = open();
+            wind.document.body.style.margin = 0;
+            const iframe = wind.document.createElement("iframe");
+            iframe.style.margin = 0;
+            iframe.style.width = "100%";
+            iframe.style.height = "100%";
+            iframe.src = "_index.html";
+        }
+    </script>
+</body>
+</html>
